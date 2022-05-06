@@ -1,2 +1,2 @@
 [workspace]
-members = ["rs-fingerprint"]
+members = ["rs-fingerprint", "frievalds-alg"]
