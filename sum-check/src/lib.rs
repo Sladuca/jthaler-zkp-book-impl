@@ -3,19 +3,10 @@ use ark_ff::PrimeField;
 use ark_std::{cfg_into_iter, cfg_iter};
 use crossbeam::channel::{Sender, Receiver};
 use rand::{prelude::ThreadRng, Rng};
+use utils::bit_decompose;
 
 pub type MultiPolynomial<F> = SparsePolynomial<F, SparseTerm>;
 pub type UniPolynomial<F> = UniSparsePolynomial<F>;
-
-fn bit_decompose<F: PrimeField>(mut n: u64, n_bits: usize) -> Vec<F> {
-    let mut vals = Vec::with_capacity(n_bits);
-    for _ in 0..n_bits {
-        let val = n & 1;
-        vals.push(F::from(val));
-        n >>= 1;
-    }
-    vals
-}
 
 pub fn sum_over_boolean_hypercube<F: PrimeField>(g: &MultiPolynomial<F>) -> F {
     cfg_into_iter!(0u64..(1 << g.num_vars()))

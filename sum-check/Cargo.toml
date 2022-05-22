@@ -11,6 +11,7 @@ ark-poly = "0.3"
 crossbeam = "0.8.1"
 ark-std = "0.3"
 rand = { version = "0.8.5", features = ["std", "std_rng", "small_rng"] }
+utils = { path = "../utils" }
 
 [dev-dependencies]
 ark-bls12-381 = "0.3"
