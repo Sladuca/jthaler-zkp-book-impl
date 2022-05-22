@@ -73,7 +73,7 @@ mod tests {
     use ark_bls12_381::Fr;
 
     #[test]
-    fn test_eval_mle_naive() {
+    fn it_works() {
         // testing this is really annoying with real fields so I'm just going to not test it
     }
 }
