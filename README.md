@@ -1,6 +1,6 @@
 # Justin Thaler ZKP Book Implementations
 
-This repo contains a bunch of implementations of stuff from [Justin Thaler's book](https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html) on computational proofs, arguments, and zero-knowledge. Part of the [ZKHack study group](https://github.com/thor314/pazk) held [on discord](https://discord.gg/uYTKSeT3ft).
+This repo contains toy implementations of stuff from [Justin Thaler's book](https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html) on computational proofs, arguments, and zero-knowledge. Part of the [ZKHack study group](https://github.com/thor314/pazk) held [on discord](https://discord.gg/uYTKSeT3ft).
 
 ## Stuff to implement
 
